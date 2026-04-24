@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo Liquido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="py-3 encabezado">
+        <div class="container border">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <img src="img/logo-intecap.png" alt="Logo Intecap" width="100px">
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <a href="https://www.facebook.com/intecap" class="text-decoration-none text-dark me-2"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="https://www.instagram.com/intecapoficial" class="text-decoration-none text-dark me-2"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="https://twitter.com/intecapoficial" class="text-decoration-none text-dark"><i class="bi bi-twitter-x fs-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container border">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="empleados.html">Empleados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sueldo_liquido.html">Sueldo Liquido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Indemnizacion.html">Indemnizacion</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-9 border p-3 d-flex flex-column justify-content-between mb-4 mb-md-0">
+                <div class="row">
+                    <div class="col-12 col-lg-6 border mb-3 mb-lg-0">
+                        <h2>Ingresos</h2>
+                        <form action="">
+                            <label for="">Sueldo</label>
+                            <input type="number" name="sueldo" id="sueldo" class="form-control">
+                            <label for="">Bonificaciones</label>
+                            <input type="number" name="bonificaciones" id="bonificaciones" class="form-control">
+                            <label for="">Comisiones</label>
+                            <input type="number" name="comisiones" id="comisiones" class="form-control">
+                            <div class="totalGanado bg-success p-2 mt-2">
+                                <h4>Total ganado</h4>
+                                <p id="totalGanado" class="mb-0"></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-lg-6 border">
+                        <h2>Egresos</h2>
+                        <form action="">
+                            <label for="">Ahorro</label>
+                            <input type="number" name="ahorro" id="ahorro" class="form-control">
+                            <label for="">IGSS</label>
+                            <input type="number" name="igss" id="igss" class="form-control"
+                                placeholder="No llenar Este campo" disabled>
+                            <label for="">Prestamos/otros descuentos</label>
+                            <input type="number" name="prestamos" id="prestamos" class="form-control">
+                            <div class="Deducciones bg-danger p-2 mt-2">
+                                <h4>Total deducciones</h4>
+                                <p id="totalDeducciones" class="mb-0"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="d-grid gap-2">
+                        <button id="btnObtenerSueldoLiquido" class="btn btn-primary">Obtener Sueldo Liquido</button>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="totalSueldoLiquido bg-success p-3">
+                            <h4>Sueldo Liquido</h4>
+                            <p id="totalSueldoLiquido" class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3 border text-center p-3">
+                <img src="img/logo-intecap-53años.png" alt="Logo Intecap" width="250px" class="img-fluid">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/sueldo_liquido.js"></script>
+</body>
+
+</html>

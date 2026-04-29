@@ -7,22 +7,26 @@ const añosTrabajados = document.querySelector("#añosTrabajados");
 
 //creamos la funcion para calcular la indemnizacion
 function calcularIndemnizacion() {
-    const sueldo = parseFloat(sueldoBase.value);
-    const salario = parseFloat(salarioPendiente.value);
-    const cobros = parseFloat(cobrosPendientes.value);
-    let años = parseFloat(añosTrabajados.value);
-    let añosCumplidos = años * 12;
-    console.log(añosCumplidos);
-    let bono14 = sueldo / añosCumplidos * añosCumplidos;
-    let aguinaldo = sueldo / añosCumplidos * añosCumplidos;
+    const sueldo = parseFloat(sueldoBase.value) || 0;
+    const salario = parseFloat(salarioPendiente.value) || 0;
+    const cobros = parseFloat(cobrosPendientes.value) || 0;
+    let años = parseFloat(añosTrabajados.value) || 0;
 
-    document.querySelector("#bono14").value = bono14;
-    document.querySelector("#aguinaldo").value = aguinaldo;
+    // Años completos y meses restantes
+    let añosCompletos = Math.floor(años);
+    let mesesRestantes = (años - añosCompletos) * 12;
 
+    // Aguinaldo y Bono 14 proporcional (solo meses del último año)
+    const bono14 = (sueldo / 12) * mesesRestantes;
+    const aguinaldo = (sueldo / 12) * mesesRestantes;
+     console.log(bono14);
+    document.querySelector("#bono14").value = bono14.toFixed(2);
+    document.querySelector("#aguinaldo").value = aguinaldo.toFixed(2);
 
+    // Indemnización (1 sueldo por año trabajado)
+    let indemnizacion = (sueldo * añosCompletos) + bono14 + aguinaldo + salario - cobros;
 
-    let indemnizacion = (sueldo * añosCumplidos) + bono14 + aguinaldo + salario - cobros;
-    resultado.innerHTML = `<p>Indemnizacion: ${indemnizacion}</p>`;
+    resultado.innerHTML = `<p>Indemnización: Q${indemnizacion.toFixed(2)}</p>`;
 }
 
 

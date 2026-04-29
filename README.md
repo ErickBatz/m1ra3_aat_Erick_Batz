@@ -2,7 +2,7 @@
 ## Descripcion
 - proyecto de practica, final del resultado de aprendizaje numero 3 donde implementamos javascript a archivos html y darle funciones a nuestra pagina web, en este proyecto lo que hiciemos fue crear un sitio web con temas como empleados, sueldo liquidi y indenmizacion, creado una pagina inspirada en intecao, con temas como sus valores, vision, mision y su ubicacion, el proposito de esta pagina es para que nosotros podamos practicar nuestras habilidades en lo que es el lenguaje javascript.
 
-# estructura rapdida
+# estructura rapida del proyecto
 ## pagina empleados
 - la idea de esta pagina era agregar a los diferente empleados en una tabla mediante un formulario en html con campos como nommbre, fecha de ingreso, puesto y salario, asi con ayuda de botones enel apartado de javascript creamos los eventos necesarios para que cada boton tuviera las funciones que solicitaron, como son guargar, eliminar ultimo en la tabla y eliminar primero en la fila
 
@@ -26,7 +26,7 @@ en el apartado de Egresos los campos solicitados fueron:
 6. cobros pendientes 
 y asi con ayuda del lenguaje javascript crear los eventos y extraer los datos necesarios para calcular la indenmizacion
 
-<img src="https://intecap.edu.gt/imageninstitucional/" width="300">
+![Logo](https://intecap.edu.gt/imageninstitucional/)
 
 # tecnologias utilizadas en el proyecto
 | tecnologia | explicacion|

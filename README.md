@@ -26,7 +26,7 @@ en el apartado de Egresos los campos solicitados fueron:
 6. cobros pendientes 
 y asi con ayuda del lenguaje javascript crear los eventos y extraer los datos necesarios para calcular la indenmizacion
 
-![Logo](https://intecap.edu.gt/imageninstitucional/)
+![Logo](https://intecap.edu.gt/wp-content/uploads/2021/06/logo-intecap.png)
 
 # tecnologias utilizadas en el proyecto
 | tecnologia | explicacion|
